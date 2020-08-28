@@ -1,0 +1,115 @@
+.banner {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    object-fit: contain;
+}
+
+.banner__overlay {
+    background-color: rgba(20,20,20,.35);
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    top: 0;
+}
+
+.banner__backdrop {
+    position: absolute;
+    z-index: 1;
+    bottom: -1em;
+    width: inherit;
+    height: 5em;
+    background-image: linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+}
+
+.banner__details {
+    position: absolute;
+    z-index: 2;
+    max-width: 30em;
+    left: 2rem;
+    bottom: 5em;
+    margin-right: 2rem;
+}
+
+.banner__description {
+    color: #fff;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.45);
+    margin-top: 0.1vw;
+}
+
+.banner__poster__name {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1.2vw;
+}
+
+.banner__button__block {
+    margin-top: 1.5em;
+}
+
+.banner__button {
+    margin-right: 0.8rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2.4rem;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.banner__button:focus {
+    outline: none;
+}
+
+.banner__button:hover {
+    background: rgba(255,255,255,0.7);
+}
+
+.banner__button--primary {
+    background-color: #fff;
+    color: #000;
+}
+
+.banner__button--primary:hover {
+    background: rgba(255,255,255,0.7);
+}
+
+.banner__button--secondary {
+    background-color: rgba(109,109,110,0.7);
+    color: white;
+}
+
+.banner__button--secondary:hover {
+    background: rgba(109,109,110,0.4);
+}
+
+@media screen and (max-width: 800px) {
+    .banner {
+        height: 450px;
+    }
+
+    .banner__poster__name {
+        font-size: 2rem;
+    }
+
+    .banner__details {
+        bottom: 2em;
+    }
+
+    .banner__button {
+        font-size: 14px;
+    }
+
+    .banner__description {
+        font-size: 16px;
+    }
+}
